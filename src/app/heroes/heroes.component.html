@@ -1,0 +1,11 @@
+<h2 *ngIf="selectedHero"> Selected Hero here: {{selectedHero.name }}</h2>
+
+
+<h2> All heroes here: </h2>
+
+<div>
+  <ul class="heroes">
+   <li *ngFor="let hero of heroes" (click)="onSelect(hero)"> {{hero.id}} {{hero.name}}</li>
+
+  </ul>
+</div>
